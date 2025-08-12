@@ -1,0 +1,16 @@
+.palette-category{
+    display: grid;
+    gap: 2rem;
+}
+.palette-grid{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    margin-block-start: 0.5rem;
+}
+.palette-item{
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: subgrid;
+    gap: 1rem;
+    padding: 1rem;
+}

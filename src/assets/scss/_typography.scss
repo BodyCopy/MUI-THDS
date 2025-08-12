@@ -1,0 +1,138 @@
+:root {
+    font-size: var(--base-font-size);
+    --font-family: 'Helvetica Now Text SA';
+    --base-font-size: 16px;
+    --typography-scale: 1.125;
+    --viewport-min: 320px;
+    --viewport-max: 1200px;
+
+    //grab the breakpoints
+    @media screen and (max-width: 800px) {
+        --base-font-size: 15px;
+    }
+
+    @media screen and (max-width: 440px) {
+        --base-font-size: 14px;
+    }
+}
+
+.MuiTypography-root,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.body1,
+.body2,
+.caption {
+    color: var(--typography-color);
+
+    &.muted {
+        --typography-color: var(--typography-color-muted);
+    }
+}
+
+
+h1.hero,
+h1.MuiTypography-hero {
+    --modular-font-size: calc(var(--base-font-size) * pow(var(--typography-scale), 8.5));
+    font-size: round(up, clamp(calc(var(--modular-font-size) * 0.8),
+                calc(var(--modular-font-size) + 0.5vw),
+                calc(var(--modular-font-size) * 1.2)), 1px);
+    line-height: 1.2em;
+    font-weight: 400;
+}
+
+h1,
+[data-t-ui="h1"] {
+    --modular-font-size: calc(var(--base-font-size) * pow(var(--typography-scale), 5));
+    font-size: round(up, clamp(calc(var(--modular-font-size) * 0.8),
+                calc(var(--modular-font-size) + 0.5vw),
+                calc(var(--modular-font-size) * 1.2)), 1px);
+    line-height: 1.3em;
+    font-weight: 400;
+}
+
+h2,
+[data-t-ui="h2"] {
+    --modular-font-size: calc(var(--base-font-size) * pow(var(--typography-scale), 4));
+    font-size: round(up, clamp(calc(var(--modular-font-size) * 0.8),
+                calc(var(--modular-font-size) + 0.5vw),
+                calc(var(--modular-font-size) * 1.2)), 1px);
+    line-height: 1.35em;
+    font-weight: 400;
+}
+
+h3,
+[data-t-ui="h3"] {
+    --modular-font-size: calc(var(--base-font-size) * pow(var(--typography-scale), 3));
+    font-size: round(up, clamp(calc(var(--modular-font-size) * 0.8),
+                calc(var(--modular-font-size) + 0.5vw),
+                calc(var(--modular-font-size) * 1.2)), 1px);
+    line-height: 1.35em;
+    font-weight: 400;
+}
+
+h4,
+[data-t-ui="h4"] {
+    --modular-font-size: calc(var(--base-font-size) * pow(var(--typography-scale), 2));
+    font-size: round(up, clamp(calc(var(--modular-font-size) * 0.8),
+                calc(var(--modular-font-size) + 0.5vw),
+                calc(var(--modular-font-size) * 1.2)), 1px);
+    line-height: 1.4em;
+    font-weight: 600;
+}
+
+h5,
+[data-t-ui="h5"] {
+    --modular-font-size: calc(var(--base-font-size) * pow(var(--typography-scale), 1));
+    font-size: round(up, clamp(calc(var(--modular-font-size) * 0.8),
+                calc(var(--modular-font-size) + 0.5vw),
+                calc(var(--modular-font-size) * 1.2)), 1px);
+    line-height: 1.4em;
+    font-weight: 600;
+}
+
+h6,
+[data-t-ui="h6"] {
+    --modular-font-size: calc(var(--base-font-size) * pow(var(--typography-scale), 0));
+    font-size: round(up, var(--modular-font-size), 1px);
+    line-height: 1.4em;
+    font-weight: 600;
+}
+
+p.body1,
+p.MuiTypography-body1 {
+    --modular-font-size: calc(var(--base-font-size) * pow(var(--typography-scale), 0));
+    font-size: var(--modular-font-size);
+    max-width: 80ch;
+}
+
+p.body2,
+p.MuiTypography-body2 {
+    --modular-font-size: calc(var(--base-font-size) / pow(var(--typography-scale), 1));
+    font-size: round(var(--modular-font-size), 1px);
+    max-width: 80ch;
+
+    @media screen and (max-width: 440px) {
+        font-size: 13px;
+    }
+}
+
+.caption.MuiTypography-caption {
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.MuiButtonBase-root {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+}
+
+//scale to nearest
+/*
+Let’s do the dialog - in the card page
+*/

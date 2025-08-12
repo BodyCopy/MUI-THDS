@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Helvetica Now Text SA';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Helvetica Now Text SA Bold'), url(./assets/fonts/HelveticaNowTextSABold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Helvetica Now Text SA';
+    font-style: italic;
+    font-weight: 900;
+    src: local('Helvetica Now Text SA Bold Italic'), url(./assets/fonts/HelveticaNowTextSABold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Helvetica Now Text SA';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Helvetica Now Text SA Light'), url(./assets/fonts/HelveticaNowTextSA.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Helvetica Now Text SA';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Helvetica Now Text SA Light Italic'), url(./assets/fonts/HelveticaNowTextSA.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Helvetica Now Text SA';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Helvetica Now Text SA Regular'), url(./assets/fonts/HelveticaNowTextSA.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Helvetica Now Text SA';
+    font-style: italic;
+    font-weight: 500;
+    src: local('Helvetica Now Text SA Regular Italic'), url(./assets/fonts/HelveticaNowTextSA.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Helvetica Now Text SA';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Helvetica Now Text SA Semibold'), url(./assets/fonts/HelveticaNowTextSAMedium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Helvetica Now Text SA';
+    font-style: italic;
+    font-weight: 600;
+    src: local('Helvetica Now Text SA Semibold Italic'), url(./assets/fonts/HelveticaNowTextSAMedium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Helvetica Now Text SA';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Helvetica Now Text SA Thin'), url(./assets/fonts/HelveticaNowTextSA.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Helvetica Now Text SA';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Helvetica Now Text SA Thin Italic'), url(./assets/fonts/HelveticaNowTextSA.otf) format('opentype');
+}
+
+.MuiTypography-root {
+    color: var(--typography-color);
+
+}
+.contrast-text {
+    --typography-color: var(--typography-color-contrast);
+}

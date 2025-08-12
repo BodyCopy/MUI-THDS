@@ -1,0 +1,78 @@
+:root {
+    /* Semantic colors */
+    --brand-dark: var(--brand-800);
+    --brand-TELUS: var(--brand-700);
+    --brand-medium: var(--brand-600);
+    --brand-light: var(--brand-500);
+    --brand-graphic: var(--brand-400);
+    --brand-lighter: var(--brand-200);
+    --brand-lightest: var(--brand-050);
+    --brand-background: hsla(from var(--brand-TELUS) h s l / 0.025);
+
+    /* Primitive colors */
+    --brand-900: hsla(277, 45%, 10%, 1);
+    --brand-800: hsla(277, 41%, 20%, 1);
+    --brand-700: hsla(270, 46%, 29%, 1);
+    --brand-600: hsla(270, 42%, 38%, 1);
+    --brand-500: hsla(270, 33%, 49%, 1);
+    --brand-400: hsla(270, 34%, 62%, 1);
+    --brand-300: hsla(270, 34%, 72%, 1);
+    --brand-200: hsla(270, 33%, 85%, 1);
+    --brand-100: hsla(270, 33%, 91%, 1);
+    --brand-050: hsla(276, 19%, 95%, 1);
+
+    /* Neutral colors */
+    --grey-900: hsla(210, 4%, 18%, 1);
+    --grey-800: hsla(204, 4%, 27%, 1);
+    --grey-700: hsla(200, 4%, 43%, 1);
+    --grey-600: hsla(204, 4%, 54%, 1);
+    --grey-500: hsla(207, 8%, 64%, 1);
+    --grey-400: hsla(207, 8%, 72%, 1);
+    --grey-300: hsla(204, 10%, 90%, 1);
+    --grey-200: hsla(240, 16%, 96%, 1);
+    --grey-100: hsla(0, 0%, 98%, 1);
+    --white: hsla(204, 10%, 90%, 1);
+
+    //Map this the darkmode
+
+    @media (prefers-color-scheme: dark) {
+        --color_dark: var(--color_primary_800_dark);
+        --color_primary: var(--color_accent_700_dark);
+        --color_light: var(--color_primary_200_dark);
+        --color_very_light: var(--color_primary_100_dark);
+        --color_ultra_light: var(--color_primary_50_dark);
+
+        --color_secondary: var(--color_red_700_dark);
+        --color_secondary_light: var(--color_red_400_dark);
+        --color_secondary_ultra_light: var(--color_red_50_dark);
+
+        --color_ternary: var(--color_blue_700_dark);
+        --color_ternary_light: var(--color_blue_400_dark);
+        --color_ternary_ultra_light: var(--color_blue_50_dark);
+
+        --color_quaternary: var(--color_green_700_dark);
+        --color_quaternary_light: var(--color_green_400_dark);
+        --color_quaternary_ultra_light: var(--color_green_50_dark);
+
+        --color_quinary: var(--color_yellow_700_dark);
+        --color_quinary_light: var(--color_yellow_400_dark);
+        --color_quinary_ultra_light: var(--color_yellow_50_dark);
+
+        --color_neutral_100: var(--color_neutral_100_dark);
+        --color_neutral_75: var(--color_neutral_75_dark);
+        --color_neutral_45: var(--color_neutral_45_dark);
+        --color_neutral_30: var(--color_neutral_30_dark);
+        --color_neutral_15: var(--color_neutral_15_dark);
+
+        --color_surface_3: var(--color_surface_3_dark);
+        --color_surface_2: var(--color_surface_2_dark);
+        --color_surface_1: var(--color_surface_1_dark);
+
+        --accent_disabled_color: var(--accent_disabled_color_dark);
+        --neutral_disabled_color: var(--neutral_disabled_color_dark);
+
+        --button_box_shadow: var(--button_box_shadow_dark);
+        --button_hover_box_shadow: var(--button_hover_box_shadow_dark);
+    }
+
+}
