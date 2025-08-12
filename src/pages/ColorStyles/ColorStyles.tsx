@@ -1,8 +1,7 @@
-import { Typography, useTheme } from "@mui/material";
+import { Typography } from "@mui/material";
 import './ColorStyles.scss';
 import DefaultPage from "../../components/ComponentLibrary/DefaultPage/DefaultPage";
 export default function ColorStyles() {
-    const theme = useTheme(); // Access the MUI theme
     const palette = [
         {
             name: 'Brand Colors',
@@ -46,7 +45,7 @@ export default function ColorStyles() {
                         <div key={category.name}>
                             <Typography variant="h5">{category.name}</Typography>
                             <div className="palette-grid">
-                                {category.items.map((item, index) => (
+                                {category.items.map((item) => (
                                     <div
                                         key={item.name}
                                         className={`palette-item ${item.contrastText ? 'contrast-text' : ''}`}

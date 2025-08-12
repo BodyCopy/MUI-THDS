@@ -1,4 +1,4 @@
-import { Input, Link, TextField, Typography } from "@mui/material";
+import { Link, TextField, Typography } from "@mui/material";
 import DefaultPage from "../../components/ComponentLibrary/DefaultPage/DefaultPage";
 import './TypographyStyles.scss';
 import { useEffect, useState } from "react";
@@ -28,7 +28,7 @@ export default function TypographyStyles() {
                     <TextField
                         label="Modular Scale"
                         type="number" // Use number input
-                        step="0.05" // Allow increments of 0.05
+                        inputProps={{ step: 0.05 }} // Allow increments of 0.05
                         value={modularTypeScale} // Bind state to input value
                         onChange={handleScaleChange} // Update state on input change
                     />

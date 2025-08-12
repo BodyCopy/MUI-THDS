@@ -49,6 +49,13 @@ const baseTheme = createTheme({
 //Remove this - we will use HTML elements 
 baseTheme.typography = {
     fontFamily: readCSSVar('--font-family'), // Use CSS variable
+    fontSize: 14, // Default font size
+    fontWeightLight: 300,
+    fontWeightRegular: 400,
+    fontWeightMedium: 500,
+    fontWeightBold: 700,
+    htmlFontSize: 16, // Required property
+    pxToRem: (size: number) => `${size / 16}rem`, // Required property
     hero: {
         fontWeight: '400',
         fontSize: '48px',
@@ -97,8 +104,20 @@ baseTheme.typography = {
     overline: {
         fontSize: '12px',
         textDecoration: 'capitalize'
+    },
+    caption: {
+        fontSize: '12px',
+        lineHeight: '150%',
+    },
+    subtitle1: {
+        fontSize: readCSSVar('--modular-font-size'),
+        lineHeight: '140%',
+    },
+    subtitle2: {
+        fontSize: readCSSVar('--modular-font-size'),
+        lineHeight: '135%',
     }
-}
+};
 baseTheme.components = {
     MuiCssBaseline: {
         styleOverrides: {

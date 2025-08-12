@@ -1,11 +1,4 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Button from '@mui/material/Button';
-import './App.css'
-import MyButton from './components/MyButton';
-import { Typography } from '@mui/material';
 import TypographyStyles from './pages/TypographyStyles/TypographyStyles';
 import ColorStyles from './pages/ColorStyles/ColorStyles';
 import SimpleComponents from './pages/SimpleComponents';

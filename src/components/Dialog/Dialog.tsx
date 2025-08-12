@@ -1,5 +1,4 @@
-import { IconButton, Typography } from '@mui/material';
-import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
+import { IconButton} from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 
 import './Dialog.scss'
